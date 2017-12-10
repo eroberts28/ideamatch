@@ -1,0 +1,147 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1413745126057-2c431084f6f0?auto=format&fit=crop&w=1196&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+/*    background-image: url("../img/unsplash.jpeg");*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* hide the results and details by default */
+#results, #details {
+    display: none;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.7);
+    display:inline-block;
+    overflow: none;
+    float: right;
+    width: 800px;
+    padding: 20px;
+    margin-right: 60px;
+    margin-bottom: 2px;
+    height: 550px;
+    border-radius: 8px;
+    border-top-width: 20px;
+    margin-top: 10px;
+    max-width: 500px;
+    padding: 20px;
+
+}
+
+/* select the img with an id="logo" */
+/* img#logo find an img with an id="logo" */
+/* img #logo find an img, then inside it find another element with an id="logo" */
+img#logo {
+    margin: auto;
+    padding-top: 50px;
+    width: 50%;
+    display: block; /* img by default is an "inline" element, so without this line it wouldn't centre */
+}
+
+
+/* apply the following styles to both the select and the button elements... notice the comma in between them */
+select, button {
+    width: 100%;
+    background:#8bb0c7;
+    color: white;
+    font-size: 200%;
+}
+
+button {
+    border-radius: 8px;
+    width: 8vw;
+    height: 40px;
+    background-color: #8bb0c7;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px ;
+}
+
+button:hover {
+  color: black;
+}
+
+button:hover {
+  color: black;
+  cursor: crosshair;
+
+}
+
+
+
+#results ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#results li {
+    border: 1px solid #8bb0c7;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    position: relative;
+    overflow: hidden;
+    cursor: crosshair;
+    transition: background 0.5s;
+}
+
+#results li:hover {
+    background: #8bb0c7;
+}
+
+#results img {
+    border-radius: 10px;
+    max-width: 8rem;
+    position: absolute;
+}
+
+#results h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: calc(8rem + 10px);
+    line-height: 1;
+    font-size: 1.5rem;
+    padding-bottom: calc(8rem - 1.5rem - 10px);
+}
+
+#map {
+    float: left;
+    display: inline-block;
+    position: absolute;
+    width: 42vw;
+    height: 95vh; /* experiment with different heights */
+    margin-left: 60px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+#info p {
+  float: right;
+  display: inline-block;
+  position: absolute;
+  width: 350px;
+  -webkit-margin-before: 1px;
+  margin-left: 12px;
+
+}
+
+.marker {
+  border: none;
+  cursor: crosshair;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #000;
+/*  transform: translate(10px, 20px, 0);*/
+}
+
+.marker.user
+{
+   background-color: #8bb0c7;
+}
+
+
+a.contact.button {
+display: none;
+}
